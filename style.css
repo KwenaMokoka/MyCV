@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;    
+}
+
+.root{
+    --bg-color: #1f1f1f;
+    --text-color: #fff;
+    --main-color: #ffae00;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+
+.body{
+    background: #ef4e4e;
+    color: #91975d;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index : 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%; 
+    background: transparent;
+    transition:all ease .45s;
+}
+.logo{
+    color: rgb(8, 8, 8);
+    font-size: 41px;
+    font-weight: 600;
+}
+.logo span{
+    color:yellowgreen;
+}
+.navbar{
+    display: flex;
+    align-items: center; 
+    width: 100%;
+}
+.navbar a{
+    font-size:  x-large ;
+    font-weight: 500;
+    color: #0e0d0d;
+    margin:  25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: #adff2f;
+
+}
+.navbar a.active{
+    color: greenyellow;
+}
+
+section{
+    padding: 0 15%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-text span{
+    padding:5px 25px;
+    background: linear-gradient(130.08deg, #c8c7c6 50%, #9f9e9f  50%);
+    box-shadow: 0px 5px 90px #2627246f;
+    display: flexbox;
+    border: 1px solid #1a1919;
+    border-radius:0px;
+    color: #141414;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 40px;
+    
+}
+.home-text h1{
+    font-size:  3rem;
+    width: 600px;
+    position: relative;
+    bottom: 25px;
+}
+.home-text p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #220a0a;
+    line-height: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 5px;
+    max-width: 480px;
+}
+.education-list h1 {
+    font-size:  2rem;
+    width: 600px;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+.education-list ul{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #220a0a;
+    line-height: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top:65px;
+    left: 700px; 
+    max-width: 480px;
+    
+}
+.experience h1{
+    font-size:  2rem;
+    width: 600px;
+    position: absolute;
+    top: 170px;
+    right: 60px;
+}
+.experience ul{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #220a0a;
+    line-height: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top:210px;
+    left: 700px; 
+    max-width: 480px;
+}
+.language h1{
+    font-size:  2rem;
+    width: 600px;
+    position: absolute;
+    top: 350px;
+    right: 60px;
+}
+.language p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #220a0a;
+    line-height: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    top: 390px;
+    right: 355px; 
+    max-width: 300px;
+}
+.references h1{
+    font-size:  2rem;
+    width: 600px;
+    position: absolute;
+    bottom: 160px;
+    right: 60px;
+}
+.references ul{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #220a0a;
+    line-height: 30px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom:70px;
+    left: 700px; 
+    max-width: 480px;
+
+}
+.btn{
+    display: inline-block;
+    padding: 14px 34px;
+    background:#adff2f ;
+    color: #1f1f1f;
+    border: 2px solid #adff2f;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.6s ease-in-out;
+}
+.btn:hover{
+    transform: translateY(-5px);
+    background: #1f1f1f ;
+    color: #adff2f;
+    border: #1f1f1f;
+}
+.two{
+    background: #141414;
+    border: 2px solid #141414;
+    color: #adff2f
+}
+.two:hover{
+    color: #141414;
+    background: #adff2f;
+    border: 2px solid #adff2f; 
+}
+
+.share{
+    position: absolute;
+    bottom: 3rem;
+    left: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.share p {
+    font-size: 17px;
+    color:#1a1414;
+    margin-right: 25px;
+}
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #0e0d10 50%, #0e0e0e  60%);
+    border: 1px solid #0d0d0d;   
+    border-radius: 50%;
+    color: #f0eded;
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+    
+}
+.social i:hover{
+    transform: translateY(-10px);
+}
+
+@media (max-width: 1850px){
+    header{
+        padding: 15px 8%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 8%;
+        transition: .2s;
+    }
+    .share{
+        left: 8%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1370px){
+    header{
+        padding: 15px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 0 4%;
+        transition: .2s;
+    }
+    .share{
+        left: 4%;
+        transition: .2s;
+    }
+    :root{
+        --big-font: 7rem;
+        --p-font: 1.1rem;
+        transition: 2s;
+       
+    }
+}
+
+@media (max-width: 1020px){
+    .nabar a{
+        margin: 0 15px;
+    }
+    :root{
+        --big-font: 7rem;
+        --p-font: 1.1rem;
+        transition: 2s;
+    }
+}
+
+@media (max-width: 950px){
+    .share{
+        display: none;
+    }
+    section{
+        padding: 70px 4%
+    }
+    header{
+        padding: 11px 4%;
+        background: #dbd4d4
+    }
+
+    .home{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-text{
+        order: 2;
+    }
+    .home-img{
+        margin:auto ; 
+        height:auto;
+        width:auto; 
+    }
+    home-img img{
+        max-width: 45px;
+        width: 100%;
+        height: auto;
+
+    }
+}
+@media (max-width: 850px){
+    .navbar{
+        position: absolute;
+        width: 100%;
+        height:100vh;
+        padding: 40px 50px;
+        top: 0;
+        right: 0;
+        left: 100%;
+        bottom:0;
+        display: flex;
+        flex-direction: column;
+        background: #3b3b3b;
+        transition: all 0.4s ease-in-out;
+
+    }
+    .navbar a{
+        display: block;
+        color: white;
+        padding: 0px;
+        margin: 0px 0px 4px 0px;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .navbar open{
+        left:0;
+    }
+}
+@media (max-width: 500px){
+    :root{
+        --big-font: 7rem;
+        --p-font: 15px;
+        transition: 2s;
+
+    }
+    .btn{
+        padding: 9px 29px;
+    }
+}
+
+.home-img img{
+    animation: imgg 2s ease-in-out infinite;
+    animation-delay: 2s;
+
+}
+
+@keyframes imgg{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}

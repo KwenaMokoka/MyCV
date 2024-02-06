@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+    text-decoration: none;    
+}
+
+.root{
+    --bg-color: #1f1f1f;
+    --text-color: #fff;
+    --main-color: #ffae00;
+
+    --big-font: 7rem;
+    --p-font: 1.1rem;
+
+}
+
+.body{
+    background: #ef4e4e;
+    color: #91975d;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index : 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 15%; 
+    background: transparent;
+    transition:all ease .45s;
+}
+.logo{
+    color: rgb(8, 8, 8);
+    font-size: 41px;
+    font-weight: 600;
+}
+.logo span{
+    color:yellowgreen;
+}
+.navbar{
+    display: flex;
+    position: absolute;
+    left :400px;
+    top: 150;
+    align-items: center; 
+    width: 100%;
+}
+.navbar a{
+    font-size:  x-large ;
+    font-weight: 500;
+    color: #0e0d0d;
+    margin: 25px;
+    transition: all ease .50s;
+}
+.navbar a:hover{
+    color: #adff2f;
+
+}
+.navbar a.active{
+    color: greenyellow;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%; 
+}
+
+.project h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #adff2f;
+    color: #1f1f1f;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #0c0c0c;
+    color: #adff2f;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
