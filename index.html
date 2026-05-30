@@ -1,188 +1,502 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kwena Online Portfolio</title>
+    <title>Kwena Mokoka — Software Developer</title>
+    <meta name="description" content="Recent Software Development graduate with Python/Django full-stack projects, Microsoft Azure AZ-900 certification, and hands-on cloud and database experience.">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Header section -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Welcome</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" class="active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
+
+<!-- ── NAV ───────────────────────────────────────────── -->
+<nav class="topnav">
+    <div class="inner">
+        <a class="logo" href="#">KM<span>.</span></a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────── -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-badge fade-up fade-up-1">
+                <i class="fa-solid fa-circle-dot" style="font-size:0.6rem;"></i>
+                Open to junior developer &amp; IT support roles
+            </div>
+            <h1 class="fade-up fade-up-2">Kwena Mokoka</h1>
+            <p class="subtitle fade-up fade-up-3">Software Developer · Azure AZ-900 Certified</p>
+            <p class="description fade-up fade-up-4">
+                Recent Software Development graduate building full-stack Python/Django
+                applications, cloud-native solutions, and business software that solves
+                real operational problems. Based in Pretoria, Gauteng.
+            </p>
+            <div class="hero-ctas fade-up fade-up-5">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fa-solid fa-folder-open"></i> View Projects
+                </a>
+                <a href="Kwena_Mokoka_CV.pdf" download="Kwena_Mokoka_CV.pdf" class="btn btn-outline">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+                <a href="mailto:1mokokakwena@gmail.com" class="btn btn-outline">
+                    <i class="fa-solid fa-envelope"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── ABOUT ─────────────────────────────────────────── -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Problem-solver.<br>Cloud builder.</h2>
+                <p>
+                    I'm a software developer focused on cloud engineering, full-stack web development,
+                    and building software that solves real operational problems. With a Diploma in
+                    Software Development from Boston City Campus (2025) and a Microsoft Azure
+                    AZ-900 certification, I bring both academic grounding and hands-on project experience.
+                </p>
+                <p>
+                    My background in high-pressure industrial environments — mining and engineering —
+                    gives me a perspective most developers don't have: I understand the operational
+                    problems that technology needs to solve, not just the code that powers it.
+                </p>
+                <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+                    <a href="https://github.com/KwenaMokoka" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/kwena-mokoka-0a310b276" target="_blank" rel="noopener" class="btn btn-ghost">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <span class="number">AZ-900</span>
+                    <span class="label">Azure certified</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">2025</span>
+                    <span class="label">Diploma graduate</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">Full‑Stack</span>
+                    <span class="label">Python · Django · MySQL</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">2</span>
+                    <span class="label">Languages spoken</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── PROJECTS ───────────────────────────────────────── -->
+<section class="projects" id="projects">
+    <div class="container">
+        <span class="section-label">Featured Work</span>
+        <h2 class="section-title">Projects that solve problems</h2>
+        <p class="section-desc">
+            Real applications built with business logic, secure data handling,
+            and deployment-readiness — not just tutorial clones.
+        </p>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-icon">🏫</div>
+                <div>
+                    <p class="project-tagline">Django · MySQL · Full-Stack</p>
+                    <h3>High School Registration System</h3>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Problem</span>
+                    <p>Schools manage student registration through error-prone paper forms and spreadsheets, making access control and data integrity nearly impossible to enforce.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Solution</span>
+                    <p>Full-stack web app with user authentication, group-based access control, and CRUD operations on a MySQL database. Responsive HTML/CSS front-end with secure user onboarding.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Outcome</span>
+                    <p>Deployment-ready, containerisation-friendly structure with Docker in mind. Demonstrates real access-control thinking beyond basic CRUD.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">HTML/CSS</span>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/KwenaMokoka" target="_blank" rel="noopener" class="project-link">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.75rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-icon">📚</div>
+                <div>
+                    <p class="project-tagline">Java · MySQL · OOP</p>
+                    <h3>Library Management System</h3>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Problem</span>
+                    <p>Libraries and resource centres need reliable, maintainable software to track inventory, loans, and returns — without data loss or duplication.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Solution</span>
+                    <p>Java application with a MySQL backend featuring full CRUD operations, data integrity enforcement, and optimised queries. OOP principles applied for modular, reusable architecture.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Outcome</span>
+                    <p>Clean, maintainable codebase reusable across similar data-management domains. Demonstrates database design thinking and back-end discipline.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">OOP</span>
+                    <span class="tech-tag">CRUD</span>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/KwenaMokoka" target="_blank" rel="noopener" class="project-link">
+                        <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-right" style="font-size:0.75rem;"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-icon">☁️</div>
+                <div>
+                    <p class="project-tagline">Microsoft Azure · Cloud · IAM</p>
+                    <h3>Azure Cloud Projects (×2)</h3>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Problem</span>
+                    <p>Enterprises need secure identity management and scalable cloud infrastructure — skills that must be demonstrated hands-on, not just understood theoretically.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Solution</span>
+                    <p>Configured Azure Entra ID for identity and access management; provisioned VMs, storage accounts, and cloud compute environments. Completed as part of AZ-900 diploma modules.</p>
+                </div>
+                <div class="project-row">
+                    <span class="project-row-label">Outcome</span>
+                    <p>Awarded Microsoft Azure Fundamentals (AZ-900) certification — Credential ID: 804FDB7CF8EA927.</p>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Azure Entra ID</span>
+                    <span class="tech-tag">Azure VMs</span>
+                    <span class="tech-tag">Storage Accounts</span>
+                    <span class="tech-tag">AZ-900</span>
+                </div>
+                <div class="project-footer">
+                    <span class="project-link" style="color: var(--gray-400); cursor: default;">
+                        <i class="fa-solid fa-certificate"></i> Boston City Campus Coursework
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── SKILLS ─────────────────────────────────────────── -->
+<section class="skills" id="skills">
+    <div class="container">
+        <span class="section-label">Technical Skills</span>
+        <h2 class="section-title">What I work with</h2>
+        <p class="section-desc">
+            Grouped by domain. Depth over breadth — tools I've actually built with.
+        </p>
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-group-icon">🐍</div>
+                <h4>Languages</h4>
+                <ul>
+                    <li>Python (primary)</li>
+                    <li>Java</li>
+                    <li>Bash basics</li>
+                    <li>HTML &amp; CSS</li>
                 </ul>
             </div>
-        </nav>
-    </header>
+            <div class="skill-group">
+                <div class="skill-group-icon">🌐</div>
+                <h4>Web / Back-End</h4>
+                <ul>
+                    <li>Django</li>
+                    <li>RESTful APIs</li>
+                    <li>Authentication &amp; sessions</li>
+                    <li>CRUD &amp; OOP</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-icon">☁️</div>
+                <h4>Cloud — Azure</h4>
+                <ul>
+                    <li>AZ-900 Certified</li>
+                    <li>Azure Entra ID</li>
+                    <li>Virtual Machines</li>
+                    <li>Storage Accounts</li>
+                </ul>
+            </div>
+            <div class="skill-group">
+                <div class="skill-group-icon">🗄️</div>
+                <h4>Data &amp; DevOps</h4>
+                <ul>
+                    <li>MySQL — CRUD &amp; optimisation</li>
+                    <li>Docker</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>GitHub Actions (CI/CD)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Home section -->
-    <section class="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                    <span>Software Engineer</span>
-                    <h1>Kwena Mokoka</h1>
-                    <h2>About Me</h2>
-                    <p>I am a motivated and ambitious individual with a passion for technology and a drive to make
-                        a meaningful impact in the tech industry. With a solid foundation Software Engineering and
-                        Software Development, I am eager to embark on a dynamic career journey in the world of
-                        technology.</p>
+<!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+<section class="education" id="certifications" style="background: var(--gray-50);">
+    <div class="container">
+        <span class="section-label">Certifications</span>
+        <h2 class="section-title">Credentials &amp; qualifications</h2>
+        <p class="section-desc" style="margin-bottom: 40px;">Verified certifications that back up the skills.</p>
+        <div class="edu-grid">
+            <div class="edu-card" style="border-left: 3px solid var(--azure);">
+                <p class="year">2025 · Microsoft</p>
+                <h3>Azure Fundamentals — AZ-900</h3>
+                <p class="institution">Microsoft Learn</p>
+                <p>Credential ID: 804FDB7CF8EA927<br>Cert No: 60X3A8-C7AA1D</p>
+            </div>
+            <div class="edu-card" style="border-left: 3px solid var(--azure);">
+                <p class="year">2025 · Google</p>
+                <h3>Elements of AI</h3>
+                <p class="institution">Google / MinnaLearn</p>
+                <p>Foundational AI literacy covering machine learning concepts, neural networks, and real-world AI applications.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EXPERIENCE ─────────────────────────────────────── -->
+<section class="experience" id="experience">
+    <div class="container">
+        <span class="section-label">Work History</span>
+        <h2 class="section-title">Where I've worked</h2>
+        <p class="section-desc">
+            Industrial environments taught me discipline, process thinking, and the exact
+            operational problems that software needs to solve.
+        </p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2025 – Present</span>
+                </div>
+                <h3>Assistant Splicer</h3>
+                <p class="company">Bearing Man Group (BMG)</p>
+                <p>
+                    Conducted 15+ routine equipment inspections weekly, achieving a 20% reduction
+                    in downtime. Collaborated across teams under deadline pressure — mirroring agile
+                    sprint dynamics. Actively transitioning into a junior developer or IT support role
+                    while building software projects.
+                </p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-meta">
+                    <span class="timeline-year">2022 – 2025</span>
+                </div>
+                <h3>Boilermaker Assistant</h3>
+                <p class="company">Ntshedi Lesiba Trading Enterprise (Anglo American Platinum Mine)</p>
+                <p>
+                    Fabrication, assembly, and configuration of components to strict safety and quality
+                    standards. Documented processes and procedures for team training and operational
+                    efficiency. Developed strong adaptability in high-pressure, fast-changing environments.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── EDUCATION ──────────────────────────────────────── -->
+<section class="education" id="education">
+    <div class="container">
+        <span class="section-label">Education</span>
+        <h2 class="section-title">Training &amp; qualifications</h2>
+        <p class="section-desc" style="margin-bottom: 40px;">
+            Formal academic training backed by real project work and certifications.
+        </p>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <p class="year">2019 – 2025</p>
+                <h3>Diploma in Software Development</h3>
+                <p class="institution">Boston City Campus</p>
+                <p>Modules: Database Programming (SQL), Systems Development (Java/SDLC), IT Systems Management, Web Development.</p>
+            </div>
+            <div class="edu-card">
+                <p class="year">2017</p>
+                <h3>Matric — Grade 12</h3>
+                <p class="institution">Laudium Secondary School</p>
+                <p>National Senior Certificate with a focus on mathematics and science subjects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── RESUME DOWNLOAD ───────────────────────────────── -->
+<section class="resume-download" id="resume">
+    <div class="container">
+        <div class="resume-inner">
+            <div class="resume-text">
+                <span class="section-label">Resume</span>
+                <h2 class="section-title">Want the full picture?</h2>
+                <p>
+                    Download my CV for a complete overview of my education, certifications,
+                    skills, work history, and projects — formatted and ready to share with recruiters.
+                </p>
+                <div class="resume-meta">
+                    <div class="resume-meta-item">
+                        <i class="fa-solid fa-file-pdf"></i>
+                        <span>PDF Format</span>
+                    </div>
+                    <div class="resume-meta-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Updated 2025</span>
+                    </div>
+                    <div class="resume-meta-item">
+                        <i class="fa-solid fa-language"></i>
+                        <span>English</span>
+                    </div>
+                </div>
+                <a href="Kwena_Mokoka_CV.pdf" download="Kwena_Mokoka_CV.pdf" class="btn btn-primary resume-btn">
+                    <i class="fa-solid fa-download"></i> Download My CV
+                </a>
+            </div>
+            <div class="resume-preview">
+                <div class="cv-card">
+                    <div class="cv-card-header">
+                        <div class="cv-avatar">KM</div>
+                        <div>
+                            <p class="cv-name">Kwena Mokoka</p>
+                            <p class="cv-role">Software Developer · AZ-900 Certified</p>
+                        </div>
+                    </div>
+                    <div class="cv-divider"></div>
+                    <div class="cv-section">
+                        <p class="cv-section-title">Core Skills</p>
+                        <div class="cv-tags">
+                            <span>Python</span><span>Django</span><span>MySQL</span>
+                            <span>Azure</span><span>Docker</span><span>Java</span>
+                        </div>
+                    </div>
+                    <div class="cv-section">
+                        <p class="cv-section-title">Certifications</p>
+                        <p class="cv-line"><i class="fa-solid fa-certificate" style="width:14px; color:var(--azure);"></i> Microsoft AZ-900</p>
+                        <p class="cv-line"><i class="fa-brands fa-google" style="width:14px; color:var(--azure);"></i> Google: Elements of AI</p>
+                    </div>
+                    <div class="cv-section">
+                        <p class="cv-section-title">Contact</p>
+                        <p class="cv-line"><i class="fa-solid fa-envelope" style="width:14px;"></i> 1mokokakwena@gmail.com</p>
+                        <p class="cv-line"><i class="fa-brands fa-github" style="width:14px;"></i> github.com/KwenaMokoka</p>
+                        <p class="cv-line"><i class="fa-solid fa-location-dot" style="width:14px;"></i> Pretoria, Gauteng</p>
+                    </div>
+                    <div class="cv-download-badge">
+                        <i class="fa-solid fa-file-arrow-down"></i> PDF
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- My Education section -->
-    <section class="education">
-        <div class="container">
-            <h2 class="text-center">My Education</h2>
-            <ul>
-                <li>
-                    <strong>Laudium Secondary School</strong>
-                    <p>Completed high school education.</p>
-                </li>
-                <li>
-                    <strong>Boston Business School (Software Development, 2nd Year)</strong>
-                    <p>Currently pursuing a software development program at Boston Business School, currently in the
-                        second year.</p>
-                </li>
-                <li>
-                    <strong>HyperionDev (Software Engineering)</strong>
-                    <p>Enrolled in a software engineering program at HyperionDev.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Work Experience section -->
-    <section class="experience">
-        <div class="container">
-            <h2 class="text-center">Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Comed Health:</strong> Packer (2017)
-                    <p>Description: My role as a packer was to be responsible for preparing goods for shipment or
-                        storage by carefully packing them into appropriate containers, such as boxes or crates.</p>
-                </li>
-                <li>
-                    <strong>Yaseen's Cafe:</strong> Shop Keeper (2018)
-                    <p>Description: As a shop keeper it involved overseeing the day-to-day operations of the store.
-                        This included tasks such as managing inventory, restocking shelves, assisting customers,
-                        handling transactions, maintaining cleanliness and organization of the store, and ensuring that
-                        the store operates smoothly.</p>
-                </li>
-                <li>
-                    <strong>Ntshedi Lesiba (Anglo American Platinum Mine):</strong> Safety Representative & Boilermaker
-                    Assistant (Present)
-                    <p>Description: As a safety representative, I would be responsible for promoting and maintaining a
-                        safe working environment by identifying and addressing potential hazards, conducting safety
-                        inspections, and implementing safety protocols and training programs. As a boilermaker
-                        assistant, I would support boilermakers in constructing, installing, and maintaining boilers,
-                        tanks, and other large metal structures by performing tasks such as cutting, welding, and
-                        assembling components under supervision.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Skills section -->
-    <section class="skills">
-        <div class="container">
-            <h2 class="text-center">Technical Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Proficient in Programming Languages</h3>
-                    <p>My proficiency in programming languages includes:</p>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>HTML</li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Familiarity with Various Technologies</h3>
-                    <p>My familiarity with various technologies includes:</p>
-                    <ul>
-                        <li>Django</li>
-                        <li>Sphinx</li>
-                        <li>Docker</li>
-                        <li>SQLite</li>
-                        <li>NLP</li>
-                    </ul>
+<!-- ── CONTACT ───────────────────────────────────────── -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Let's connect</h2>
+                <p class="section-desc">
+                    Open to junior developer roles, IT support positions, and technical
+                    collaborations. Reach out on any channel below — I respond quickly.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:1mokokakwena@gmail.com" class="contact-link">
+                        <div class="contact-link-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-link-text">
+                            <span class="title">Email</span>
+                            <span class="value">1mokokakwena@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kwena-mokoka-0a310b276" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="contact-link-text">
+                            <span class="title">LinkedIn</span>
+                            <span class="value">Kwena Mokoka</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/KwenaMokoka" target="_blank" rel="noopener" class="contact-link">
+                        <div class="contact-link-icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="contact-link-text">
+                            <span class="title">GitHub</span>
+                            <span class="value">github.com/KwenaMokoka</span>
+                        </div>
+                    </a>
+                    <a href="tel:0661393062" class="contact-link">
+                        <div class="contact-link-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-link-text">
+                            <span class="title">Phone</span>
+                            <span class="value">066 139 3062</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Basic Understanding of Cloud Computing</h3>
-                    <p>Cloud computing refers to the delivery of computing services over the internet, offering
-                        resources such as storage, databases, networking, software, and more, on a pay-as-you-go
-                        basis.</p>
-                    <p>My basic understanding of cloud computing includes:</p>
-                    <ul>
-                        <li>Understanding the different service models: Infrastructure as a Service (IaaS), Platform
-                            as a Service (PaaS), and Software as a Service (SaaS).</li>
-                        <li>Familiarity with cloud providers such as Amazon Web Services (AWS), Microsoft Azure, and
-                            Google Cloud Platform (GCP).</li>
-                        <li>Knowledge of cloud deployment models like public, private, and hybrid clouds.</li>
-                        <li>Awareness of cloud security principles and best practices.</li>
-                    </ul>
-                </div>
+            <div class="contact-cta">
+                <h3>Ready to hire a developer?</h3>
+                <p>
+                    I'm a recent graduate actively transitioning into a junior developer or
+                    IT support role. I learn fast, communicate clearly, and bring real-world
+                    operational context to every technical problem.
+                </p>
+                <a href="Kwena_Mokoka_CV.pdf" download="Kwena_Mokoka_CV.pdf" class="btn btn-primary" style="align-self: flex-start; margin-bottom: 10px;">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+                <a href="mailto:1mokokakwena@gmail.com" class="btn btn-outline" style="align-self: flex-start; border-color: rgba(255,255,255,0.25); color: white;">
+                    <i class="fa-solid fa-paper-plane"></i> Send a message
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- References section -->
-    <section class="references">
-        <div class="container">
-            <h2 class="text-center">References</h2>
-            <ul>
-                <li>Lesego Thema : 076 513 3427 (Ntshedi Lesiba)</li>
-                <li>CoMed Health : 012 813 9400</li>
-            </ul>
-        </div>
-    </section>
+<!-- ── FOOTER ────────────────────────────────────────── -->
+<footer>
+    <div class="container">
+        <p>© 2025 <span>Kwena Mokoka</span> — Software Developer · Pretoria, Gauteng</p>
+    </div>
+</footer>
 
-    <!-- Contact Information section -->
-    <section class="contact">
-        <div class="container">
-            <h2 class="text-center">Contact Information</h2>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <a href="https://www.linkedin.com/in/kwena-mokoka-0a310b276" target="_blank"
-                        rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:1mokokakwena@gmail.com" target="_blank"
-                        rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
